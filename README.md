@@ -1,32 +1,59 @@
-# React + TypeScript + Vite
+# Newsletter Sign-up Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive newsletter sign-up form with email validation and a success message, built as a solution to a [Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv) challenge.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+Users can enter their email address to subscribe to a newsletter. The form validates the email as they submit, shows an error message for empty or invalid entries, and displays a personalized success message once subscribed — with the option to dismiss it and sign up again.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Controlled email input with live state tracking
+- Email format validation using a regular expression
+- Error message shown for empty or invalid email addresses
+- Success screen showing the submitted email in bold
+- "Dismiss message" button to reset and return to the form
+- Fully responsive layout: illustration and form rearrange between mobile and desktop
+- Built with strict TypeScript typing throughout
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+
+## Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Zikra-S/Newsletter-sign-up-page.git
+cd Newsletter-sign-up-page
+pnpm install
+pnpm dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The app will be available at `http://localhost:5173`.
+
+## Project Structure
+
+```
+src/
+├── assets/images/   # Illustrations and icons
+├── App.tsx          # Form, validation, and success state logic
+├── index.css        # Tailwind import and global styles
+├── main.tsx         # App entry point
+```
+
+## What I Learned
+
+This project introduced form handling in React, building on concepts from earlier projects:
+
+- Controlled inputs with `useState` and `onChange`
+- Validating text input using a regular expression
+- Using `e.preventDefault()` to stop a form's default reload behavior
+- Conditional rendering to swap between a form and a success state
+- Structuring responsive layouts with Tailwind CSS breakpoints
+- Serving different images per screen size using the `<picture>` element

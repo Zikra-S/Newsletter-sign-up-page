@@ -34,7 +34,6 @@ export default function NewsletterForm() {
         className={`bg-white w-full min-h-screen sm:min-h-0 sm:rounded-3xl overflow-hidden flex flex-col-reverse sm:flex-row ${
           isSuccess ? "sm:max-w-md" : "sm:max-w-4xl"
         }`}>
-        {/* Form / success */}
         <div className="flex-1 p-8 sm:p-12 flex flex-col justify-center">
           {isSuccess ? (
             <div className="min-h-screen sm:min-h-0 flex flex-col justify-between py-4 sm:py-0">
@@ -94,7 +93,6 @@ export default function NewsletterForm() {
           )}
         </div>
 
-        {/* Illustration */}
         {!isSuccess && (
           <div className="sm:w-2/5 p-4 flex items-stretch">
             <picture className="w-full">
