@@ -14,6 +14,9 @@ export default function NewsletterForm() {
       setIsSuccess(true);
     }
   }
+  function handleDismiss() {
+    setIsSuccess(false);
+  }
 
   return (
     <div>
@@ -21,6 +24,7 @@ export default function NewsletterForm() {
         <div>
           <h1>Thanks for subscribing!</h1>
           <p>A confirmation email has been sent to {email}.</p>
+          <button onClick={handleDismiss}>Dismiss message</button>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
