@@ -7,6 +7,10 @@ A responsive newsletter sign-up form with email validation and a success message
 
 Users can enter their email address to subscribe to a newsletter. The form validates the email as they submit, shows an error message for empty or invalid entries, and displays a personalized success message once subscribed — with the option to dismiss it and sign up again.
 
+## Preview
+
+![Newsletter sign-up preview](./Preview.jpg)
+
 ## Features
 
 - Controlled email input with live state tracking
