@@ -9,7 +9,7 @@ Users can enter their email address to subscribe to a newsletter. The form valid
 
 ## Preview
 
-![Newsletter sign-up preview](./Preview.jpg)
+![Newsletter sign-up preview](./Preview.png)
 
 ## Features
 
