@@ -11,6 +11,10 @@ Users can enter their email address to subscribe to a newsletter. The form valid
 
 ![Newsletter sign-up preview](./Preview.png)
 
+## Live Demo
+
+[View live site](newslettersignuup.netlify.app/)
+
 ## Features
 
 - Controlled email input with live state tracking
